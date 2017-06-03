@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+	<title>Random Quotes</title>
+    <script src="jquery-3.2.1.js" ></script>
+  	<script src="jquery.animate-colors.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300|Roboto:100|Pacifico|Dancing+Script|Amatic+SC" rel="stylesheet">
+	<link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="quotes.js"></script>
+    <style type="text/css">
+    	.center-box{
+            position: absolute;
+    		left: 0;
+    		right: 0;
+    		margin: auto;
+    		margin-top: 100px;
+    		min-height: 200px;
+    		background-color: white;
+    		width: 600px;
+    		border-radius: 3px;
+    		padding: 20px 20px 40px 20px;
+    		text-align: center;
+    	}
+    	.quote-text{
+    		font-family: 'Amatic SC',cursive;
+    		font-weight: 100;
+    		color: rgb(21,126,244);
+    		font-size: 250%;
+    		text-align: center;
+    	}
+    	.author-text{
+    		font-family: 'Dancing Script',cursive;
+    		color: rgb(21,126,244);
+    		font-size: 150%;
+    		text-align: right;
+    	}
+    	body{
+    		background-color: rgb(21,126,244);
+    	}
+    	.button{
+    		width: 100px;
+    		margin: auto;
+    		top: 0;
+    		bottom: 0;
+    		padding: 10px 8px 10px 8px;
+    		background-color: rgb(21,126,244);
+    		border-radius: 3px;
+    		color: white;
+    		float: right;
+    	}
+    	.button:hover{
+    		cursor: pointer; 
+    		opacity: 0.9;
+    	}
+    	.icon{
+    		padding: 10px 15px 10px 15px;
+    		background-color: rgb(21,126,244);
+    		border-radius: 3px;
+    		color: white;
+    		float: left;
+    	}
+    	.icon:hover{
+    		cursor: pointer; 
+    		opacity: 0.9;
+    	}
+        .made-by-text{
+            bottom: -35px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+<div style="position: relative;">
+    <div class="center-box">
+    <p id = "quotes" class="quote-text"> </p>
+    <p id="author" class="author-text"></p>
+    <div>
+    <div class="icon" id="icon-twitter" title="Tweet this Quote!" style="margin-left: 10px">
+        <i class="fa fa-twitter"></i>
+    </div>
+    <div id = "new-quote" title="Get new Quote!" class="button">
+        <p style="margin-bottom: 0px;">New Quote</p>
+    </div>
+    </div>
+<p class="made-by-text">By  <a style="color: white" href="https://github.com/ashu10832" target="_blank">Ashu Gupta</a></p>
+</div></div>
+</body>
+</html
