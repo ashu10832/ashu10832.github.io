@@ -13,13 +13,13 @@ function generateQuote(){
 			var newcolor = colors[i];
 			$("#quotes").fadeOut(500,function(){
 				$("#quotes").css({color: newcolor});
-				$(this).html(json.quote).fadeIn(500);
+				$(this).html(json[0].quote).fadeIn(500);
 				console.log();
 				 i++;
 			});
 			$("#author").fadeOut(500,function(){
 				$(this).css({color: newcolor});
-				$(this).html("-" + json.author).fadeIn(500);
+				$(this).html("-" + json[0].author).fadeIn(500);
 			});
 			$("body").animate({backgroundColor:newcolor},1000);
 			console.log("SUCCESS: ", json);
